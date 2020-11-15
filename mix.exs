@@ -37,7 +37,8 @@ defmodule Drops.MixProject do
       {:phoenix_ecto, "~> 4.1"},
       {:ecto_sql, "~> 3.4"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_live_view, "~> 0.15.0-dev", override: true, github: "phoenixframework/phoenix_live_view", branch: "master"},
+      {:phoenix_live_view, "~> 0.15.0-dev",
+       override: true, github: "phoenixframework/phoenix_live_view", branch: "master"},
       {:floki, ">= 0.27.0", only: :test},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
@@ -45,7 +46,11 @@ defmodule Drops.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:ex_aws, "~> 2.0"},
+      {:ex_aws_s3, "~> 2.0"},
+      {:poison, "~> 3.0"},
+      {:hackney, "~> 1.9"}
     ]
   end
 
